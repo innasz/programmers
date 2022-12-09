@@ -1,1 +1,8 @@
-const solution = (array, n) => array.reduce((a,b) => n === b ? a+1 : a,0)
+function solution(array, n) {
+    let answer = 0;
+    for(let i = 0; i < array.length; i++){
+        if(array[i] === n){
+            answer++
+        }
+    } return answer;
+}
